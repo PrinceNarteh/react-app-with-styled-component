@@ -1,5 +1,7 @@
 import styled from "styled-components";
-import { Container } from "../../globalStyles";
+import { Container, theme } from "../../globalStyles";
+import { Link } from "react-router-dom";
+import { FaMagento } from "react-icons/fa";
 
 export const Nav = styled.nav`
   display: flex;
@@ -19,4 +21,18 @@ export const NavbarContainer = styled(Container)`
   height: 80px;
 
   ${Container}
+`;
+
+export const NavLogo = styled(Link)`
+  justify-self: flex-start;
+  color: ${theme.colors.light};
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+`;
+
+export const NavIcon = styled(FaMagento)`
+  margin-right: 0.5rem;
 `;
