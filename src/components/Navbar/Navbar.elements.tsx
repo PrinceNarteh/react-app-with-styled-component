@@ -36,3 +36,17 @@ export const NavLogo = styled(Link)`
 export const NavIcon = styled(FaMagento)`
   margin-right: 0.5rem;
 `;
+
+export const Hamburger = styled.div`
+  display: none;
+
+  @media screen and (max-width: 960px) {
+    top: 0;
+    right: 0;
+    display: block;
+    cursor: pointer;
+    font-size: 1.8rem;
+    position: absolute;
+    transform: translate(-100%, 60%);
+  }
+`;

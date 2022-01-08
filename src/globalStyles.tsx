@@ -52,7 +52,7 @@ export const Button = styled.button`
 
   &:hover {
     transition: all 0.3s ease-out;
-    background: #fff;
+    background: ${theme.colors.light};
     background-color: ${({ primary }: Theme) =>
       primary ? "#0467FB" : "#4B59F7"};
   }
