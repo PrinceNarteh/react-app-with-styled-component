@@ -41,7 +41,8 @@ const InfoSection = ({
   alt,
   start,
 }: InfoSectionProps) => {
-  console.log(img);
+  console.log(start);
+
   return (
     <InfoSec lightBg={lightBg}>
       <Container>
@@ -59,7 +60,7 @@ const InfoSection = ({
             </TextWrapper>
           </InfoColumn>
           <InfoColumn>
-            <ImgWrapper>
+            <ImgWrapper start={start}>
               <Img src={img} alt={alt} />
             </ImgWrapper>
           </InfoColumn>
