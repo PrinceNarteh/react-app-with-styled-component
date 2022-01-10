@@ -1,4 +1,4 @@
-import { InfoSection } from "../../components";
+import { InfoSection, Pricing } from "../../components";
 import {
   homeObjectFour,
   homeObjectOne,
@@ -12,6 +12,7 @@ const Home = () => {
       <InfoSection {...homeObjectOne} />
       <InfoSection {...homeObjectTwo} />
       <InfoSection {...homeObjectThree} />
+      <Pricing />
       <InfoSection {...homeObjectFour} />
     </>
   );
