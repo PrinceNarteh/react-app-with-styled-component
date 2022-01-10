@@ -1,3 +1,5 @@
+import svg_1 from "../../images/svg-1.svg";
+
 export const homeObjectOne = {
   lightBg: false,
   imgStart: false,
@@ -9,7 +11,7 @@ export const homeObjectOne = {
   buttonLabel: "Get Started",
   description:
     "We help business owners increase their revenue. Our team of specialist can help you achieve your business goals.",
-  start: false,
-  img: "",
+  start: true,
+  img: svg_1,
   alt: "",
 };

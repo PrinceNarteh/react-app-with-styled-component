@@ -13,18 +13,18 @@ import {
 } from "./InfoSection.elements";
 
 export interface InfoSectionProps {
-  lightBg?: boolean;
+  alt?: string;
+  buttonLabel?: string;
+  description?: string;
+  headline?: string;
+  img?: string;
   imgStart?: boolean;
-  lightTopLine?: boolean;
+  lightBg?: boolean;
   lightText?: boolean;
   lightTextDesc?: boolean;
+  lightTopLine?: boolean;
   topLine?: string;
-  headline?: string;
-  description?: string;
-  buttonLabel?: string;
   start?: boolean;
-  img?: string;
-  alt?: string;
 }
 
 const InfoSection = ({
@@ -41,6 +41,7 @@ const InfoSection = ({
   alt,
   start,
 }: InfoSectionProps) => {
+  console.log(img);
   return (
     <InfoSec lightBg={lightBg}>
       <Container>
@@ -58,7 +59,7 @@ const InfoSection = ({
             </TextWrapper>
           </InfoColumn>
           <InfoColumn>
-            <ImgWrapper start={start}>
+            <ImgWrapper>
               <Img src={img} alt={alt} />
             </ImgWrapper>
           </InfoColumn>
